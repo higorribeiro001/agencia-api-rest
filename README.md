@@ -7,6 +7,9 @@
 ![Captura de tela 2025-07-06 184802](https://github.com/user-attachments/assets/f7689ee6-baf0-4686-94df-5397a09bcdc1)
 
 ## Crie o .env e preencha:
+
+> Pré-execução:
+
 ~~~
 DATABASE=viagem
 DATABASE_HOST=127.0.0.1
