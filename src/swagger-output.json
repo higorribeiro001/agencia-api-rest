@@ -38,6 +38,54 @@
           "Viagens"
         ],
         "description": "Cria uma nova viagem",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "titulo": {
+                  "type": "string",
+                  "example": "Rio de Janeiro"
+                },
+                "descricao": {
+                  "type": "string",
+                  "example": "Viagem para o Rio com hotel incluso"
+                },
+                "dias": {
+                  "type": "number",
+                  "example": 5
+                },
+                "valor": {
+                  "type": "number",
+                  "example": 1500
+                },
+                "avaliacao": {
+                  "type": "number",
+                  "example": 4
+                },
+                "latitude": {
+                  "type": "number",
+                  "example": -22.9035
+                },
+                "longitude": {
+                  "type": "number",
+                  "example": -43.2096
+                },
+                "data": {
+                  "type": "string",
+                  "example": "2025-10-02"
+                },
+                "vagas": {
+                  "type": "number",
+                  "example": 100
+                }
+              }
+            }
+          }
+        ],
         "responses": {
           "201": {
             "description": "Created"
@@ -85,6 +133,56 @@
             "required": true,
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "example": "94c67a6b-ccbb-4ab3-a683-3ce924592aa0"
+                },
+                "titulo": {
+                  "type": "string",
+                  "example": "Rio de Janeiro"
+                },
+                "descricao": {
+                  "type": "string",
+                  "example": "Viagem para o Rio com hotel incluso"
+                },
+                "dias": {
+                  "type": "number",
+                  "example": 5
+                },
+                "valor": {
+                  "type": "number",
+                  "example": 1500
+                },
+                "avaliacao": {
+                  "type": "number",
+                  "example": 4
+                },
+                "latitude": {
+                  "type": "number",
+                  "example": -22.9035
+                },
+                "longitude": {
+                  "type": "number",
+                  "example": -43.2096
+                },
+                "data": {
+                  "type": "string",
+                  "example": "2025-10-02"
+                },
+                "vagas": {
+                  "type": "number",
+                  "example": 100
+                }
+              }
             }
           }
         ],
