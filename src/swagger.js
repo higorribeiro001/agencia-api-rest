@@ -25,7 +25,7 @@ const doc = {
   ]
 };
 
-const outputFile = './swagger-output.json';
+const outputFile = './src/swagger-output.json';
 const endpointsFiles = ['./src/app.js'];
 
 swaggerAutogen(outputFile, endpointsFiles, doc);

@@ -27,7 +27,6 @@ class App {
       credentials: true,
     }));
 
-    this.app.options('*', _cors2.default.call(void 0, ));
     this.app.use(_express2.default.urlencoded({ extended: true }));
     this.app.use(_express2.default.json());
     this.app.use(_bodyparser2.default.json());
