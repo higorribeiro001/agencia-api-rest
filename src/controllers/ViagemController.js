@@ -2,7 +2,7 @@ import Viagem from "../models/Viagem";
 import FotoViagem from "../models/FotoViagem";
 
 const select = {
-  attributes: ['id', 'titulo', 'descricao', 'dias', 'valor', 'avaliacao', 'data', 'latitude', 'longitude'],
+  attributes: ['id', 'titulo', 'descricao', 'dias', 'valor', 'avaliacao', 'data', 'latitude', 'longitude', 'vagas'],
   order: [['data', 'DESC'], [FotoViagem, 'created_at', 'DESC']],
   include: {
     model: FotoViagem,

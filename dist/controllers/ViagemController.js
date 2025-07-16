@@ -2,7 +2,7 @@
 var _FotoViagem = require('../models/FotoViagem'); var _FotoViagem2 = _interopRequireDefault(_FotoViagem);
 
 const select = {
-  attributes: ['id', 'titulo', 'descricao', 'dias', 'valor', 'avaliacao', 'data', 'latitude', 'longitude'],
+  attributes: ['id', 'titulo', 'descricao', 'dias', 'valor', 'avaliacao', 'data', 'latitude', 'longitude', 'vagas'],
   order: [['data', 'DESC'], [_FotoViagem2.default, 'created_at', 'DESC']],
   include: {
     model: _FotoViagem2.default,
