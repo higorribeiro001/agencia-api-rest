@@ -23,7 +23,7 @@ class App {
   middlewares() {
     this.app.use(_cors2.default.call(void 0, {
       origin: ['http://localhost:3000'],
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       credentials: true,
     }));
 
