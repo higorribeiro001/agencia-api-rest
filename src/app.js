@@ -22,7 +22,7 @@ class App {
 
   middlewares() {
     this.app.use(cors({
-      origin: ['http://localhost:3000'],
+      origin: ['https://front-agencia-chi.vercel.app/'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       credentials: true,
     }));
